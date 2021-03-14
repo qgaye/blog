@@ -1,0 +1,5 @@
+baseURL = "https://qgaye.github.io/"
+languageCode = "en-us"
+title = "qgaye's blog"
+theme = "pickles"
+copyright = "<a href = \"/\">home</a> / <a href = \"/about\">about me</a>"
