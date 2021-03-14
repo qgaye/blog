@@ -26,5 +26,9 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: d92d4c24ad61f1f03aa26e3aa359ce248227c8a6
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: qgaye/qgaye.github.io
           publish_dir: ./public
+          publish_branch: gh-pages  
+          publish_dir: ./public  
+          commit_message: ${{ github.event.head_commit.message }}
